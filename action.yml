@@ -1,0 +1,16 @@
+---
+name: 'Latexmk in directory'
+description: 'Compile all .tex files in given directory'
+
+inputs:
+        directory:
+                description: "The directory where the files reside"
+                required: false
+                default: doc
+
+runs:
+        using: 'docker'
+        image: 'Dockerfile'
+        env:
+                LATEX_DIR: ${{ inputs.directory }}
+
