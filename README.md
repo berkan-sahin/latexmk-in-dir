@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
      
-      - uses: berkan-sahin/latexmk-in-dir@v1
+      - uses: berkan-sahin/latexmk-in-dir@v0.1
       with:
         directory: doc
 ```
