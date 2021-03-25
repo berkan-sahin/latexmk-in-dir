@@ -26,3 +26,4 @@ jobs:
 		- uses: berkan-sahin/latexmk-in-dir@v1
 		  with:
 		  	directory: doc
+```
