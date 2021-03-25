@@ -17,13 +17,12 @@ name: CI
 on: [push]
 
 jobs:
-	test-latex:
-	runs-on: ubuntu-latest
-
-	steps:
-		- uses: actions/checkout@v2
-
-		- uses: berkan-sahin/latexmk-in-dir@v1
-		  with:
-		  	directory: doc
+  test-latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+     
+      - uses: berkan-sahin/latexmk-in-dir@v1
+      with:
+        directory: doc
 ```
